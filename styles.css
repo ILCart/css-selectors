@@ -40,7 +40,7 @@
 .cta:link,
 .cta:visited {
   font-style: italic;
-  background-color: #EEB75A;     /* Yellow */
+  background-color: #39b053;
 }
 
 .cta:hover,
@@ -80,3 +80,17 @@ p:last-of-type{
     color: #7E8184;
     font-style: italic;
 }
+p:first-of-type{
+    color: blueviolet;
+    font-style: italic;
+}
+
+
+/* #button-2{
+    color: darkgray;
+} */ 
+/* USE CLASS SELECTORS!! */
+/* 
+#button-2 {
+    background-color: #D55C5F;    
+  } */
