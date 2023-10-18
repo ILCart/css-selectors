@@ -5,7 +5,9 @@
 .synopsis em{
     font-style: normal;
 }
-.button{
+.button,.button:visited,.button:link{
+    display: block;
+    text-decoration: none;
     color: rgb(255, 246, 230);
     background-color: #5995DA;
     font-weight: bold;
@@ -16,14 +18,41 @@
     width: 200px;
     margin: 20px auto;
 }
+.button:hover,
+.button:visited:hover {
+  color: #FFF;
+  background-color: #76AEED;  /* Light blue */
+}
+
+.button:active,
+.button:visited:active {
+  color: #FFF;
+  background-color: #5995DA;  /* Blue */
+}
 .page{
     width: 600px;
     margin: 0 auto;
 }
 .cta{
     font-style: italic;
-    background-color: yellowgreen;
+    background-color: darkorange;
 }
+.cta:link,
+.cta:visited {
+  font-style: italic;
+  background-color: #EEB75A;     /* Yellow */
+}
+
+.cta:hover,
+.cta:visited:hover {
+  background-color: #F5CF8E;     /* Light yellow */
+}
+
+.cta:active,
+.cta:visited:active {
+  background-color: #EEB75A;     /* Yellow */
+}
+
 a:link{
     color: blue;
     text-decoration: none;
@@ -31,6 +60,7 @@ a:link{
 a:visited{
     color: purple;
 }
+
 a:visited:hover{
     color: orange;
 }
@@ -43,4 +73,10 @@ a:hover{
 }
 a:active{
     color: red;
+}
+
+p:last-of-type{
+    margin-bottom: 50px;
+    color: #7E8184;
+    font-style: italic;
 }
